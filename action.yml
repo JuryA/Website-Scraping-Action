@@ -1,6 +1,6 @@
 name: "test Action"
 description: "hell no"
-author: "@SjSingh101"
+author: "@JuryA"
 
 input:
     MY_NAME:

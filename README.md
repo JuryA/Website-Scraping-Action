@@ -3,6 +3,7 @@
 The GitHub Actions for scraping any website and pushing the code to GitHub repository using GitHub token.
 
 With ease:
+
 - set up a repository of website without downloading locally,
 - no need to download any software for scraping,
 - publish page using GitHub-Pages in **future update**,
@@ -19,7 +20,7 @@ build:
         runs-on: ubuntu-latest
         steps:
              - uses: actions/checkout@v1
-             - uses: ./ 
+             - uses: ./
                env:
                   URL: ${{ secrets.URL }}
                   OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
@@ -35,7 +36,6 @@ build:
 | URL | string | | HostName of the website. Can be passed in using `${{ secrets.URL }}`. |
 
 After fork, add the above parameters to secrets and your name to accept.md and commit the changes
-
 
 ## License
 

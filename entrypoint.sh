@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'Website Scrapped at `date`'
+echo "Website Scrapped at $(date)"
 apt-get update
 apt install wget curl git -y
 curl -H "Authorization: token $OAUTH_TOKEN" https://api.github.com/user/repos -d '{"name":"Website","private":false}'

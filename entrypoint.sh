@@ -11,4 +11,4 @@ git config --global user.email "altman.jiri@gmail.com"
 git config --global user.name "$USER"
 git add .
 git commit -m "Final Update"
-git push https://$TOKEN:x-oauth-basic@github.com/$USER/Website-JuryA-Keybase.git master --force
+git push https://$GITHUB_ACTOR:$TOKEN@github.com/$USER/Website-JuryA-Keybase.git master --force

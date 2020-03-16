@@ -9,5 +9,5 @@ jobs:
              - uses: ./ 
                env:
                   URL: ${{ secrets.URL }}
-                  OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
+                  TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   USER: ${{ secrets.USER }}
